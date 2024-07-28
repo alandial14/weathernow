@@ -1,0 +1,6 @@
+.current-weather {
+    flex-direction: column;
+    /* display: flex; */
+    margin-top: 80px;
+
+}

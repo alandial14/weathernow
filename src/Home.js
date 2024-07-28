@@ -28,7 +28,7 @@ function Home({ getWeather }) {
                     onChange={(e) => setCity(e.target.value)}
                     required
                 />
-                <button type="submit" class="button1">
+                <button type="submit" className="button1">
                     <i className="fas fa-search"></i>
                 </button>
             </form>

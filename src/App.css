@@ -3,5 +3,10 @@ body {
   background-image: url('clouds.jpg');
   background-size: cover;
   display: flex;
-  margin: 0;
+  margin: auto;
+}
+
+.clear {
+  background: url('clear.jpg') no-repeat center center fixed;
+  background-size: cover;
 }

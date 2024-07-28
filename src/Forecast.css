@@ -1,0 +1,54 @@
+.forecast-container {
+    text-align: center;
+    background-color: rgba(207, 198, 198, 0.6);
+    padding: 50px;
+    border-radius: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    max-width: 700px;
+    margin: auto;
+    align-self: center;
+    position: relative;
+    overflow: fixed;
+    overflow-x: auto;
+
+}
+
+.forecast-list {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0;
+}
+
+.forecast-scroll {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    scrollbar-color: #888 transparent;
+    scrollbar-width: thin;
+}
+
+.forecast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    white-space: nowrap;
+    line-height: 2;
+    /* Add some spacing between items */
+}
+
+.forecast-header {
+    position: sticky;
+    /* Use sticky positioning */
+    z-index: 10;
+    /* Ensure it stays above other content */
+    top: 0;
+    text-align: center;
+
+
+    margin-top: 0;
+
+}

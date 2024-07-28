@@ -17,7 +17,7 @@ function Header({ getWeather }) {
 
     return (
         <div className="header">
-            <h1>Weather<font color="#00796b">Now</font></h1>
+            <h1>Weather<font color="#8FBC8F">Now</font></h1>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
