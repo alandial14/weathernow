@@ -1,12 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CurrentWeather.css';
 import 'weather-icons/css/weather-icons.css';
 
 
 function CurrentWeather({ weatherData }) {
-    if (!weatherData) {
-        return <div></div>;
-    }
     const iconMapping = {
         "snow": "wi wi-snow",
         "rain": "wi wi-rain",
@@ -21,12 +18,12 @@ function CurrentWeather({ weatherData }) {
 
     const icon = iconMapping[weatherData.currentConditions.icon] || "wi wi-cloud"; // Default to 'faCloud' if icon is not found
 
-
     return (
+
         <div className="weather-container">
             <h2>{weatherData.resolvedAddress}</h2>
             <div className="weather-icon">
-                <i className={icon} style={{ fontSize: '100px', color: '#8FBC8F' }}></i>
+                <i className={icon} style={{ fontSize: '100px', color: 'white' }}></i>
             </div>
             <div className='temp'>{Math.round(weatherData.currentConditions.temp)}°F</div>
             <h1>{weatherData.currentConditions.conditions}</h1>

@@ -1,6 +1,10 @@
-.current-weather {
+.weather-layout {
     flex-direction: column;
     /* display: flex; */
-    margin-top: 80px;
+    margin-top: 0px;
 
+}
+
+.forecast {
+    margin-top: 20px;
 }

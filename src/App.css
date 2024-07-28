@@ -1,12 +1,79 @@
 body {
   font-family: "Courier New", sans-serif;
-  background-image: url('clouds.jpg');
+  background-image: url('/public/clouds.jpg');
   background-size: cover;
   display: flex;
   margin: auto;
 }
 
-.clear {
-  background: url('clear.jpg') no-repeat center center fixed;
+body.clear-day {
+  background-image: url('/public/clear-day.jpg');
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body.snow {
+  background-image: url('/public/snow.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body.rain {
+  background-image: url('/public/rain.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body.fog {
+  background-image: url('/public/fog.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body.wind {
+  background-image: url('/public/clouds.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body.partly-cloudy-night {
+  background-image: url('/public/partly-cloudy-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body.partly-cloudy-day {
+  background-image: url('/public/partly-cloudy-day.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+body.cloudy {
+  background-image: url('/public/cloudy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+body.clear-night {
+  background-image: url('/public/clear-night.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
 }

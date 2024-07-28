@@ -7,17 +7,6 @@ import './Forecast.css'
 
 function Forecast({ weatherData }) {
     const iconMapping = {
-        // "snow": faSnowflake,
-        // "rain": faCloudRain,
-        // "fog": faSmog,
-        // "wind": faWind,
-        // "cloudy": faCloud,
-        // "partly-cloudy-day": faCloudSun,
-        // "partly-cloudy-night": faCloudMoon,
-        // "clear-day": faSun,
-        // "clear-night": faMoon, 
-        // Note: faMoon needs to be imported
-        // Add more mappings if necessary
         "snow": "wi wi-snow",
         "rain": "wi wi-rain",
         "fog": "wi wi-fog",
@@ -30,6 +19,7 @@ function Forecast({ weatherData }) {
 
     };
     const currHour = parseInt(weatherData.currentConditions.datetime.split(':')[0]);
+    console.log(currHour);
     const hourNum = 24;
     const nextHours = [];
     for (let i = currHour; i < 24 && nextHours.length < hourNum; i++) {
@@ -50,7 +40,7 @@ function Forecast({ weatherData }) {
                 <ul className="forecast-list">
                     {nextHours.map((hour, index) => (
                         <li key={index} className="forecast-item">
-                            <div>{new Date(hour.datetimeEpoch * 1000).toLocaleTimeString([], { hour: 'numeric' })}</div>
+                            <div>{new Date(weatherData.days[0].datetime + 'T' + hour.datetime).toLocaleTimeString([], { hour: 'numeric' })}</div>
                             <i className={iconMapping[hour.icon] || 'wi wi-na'} style={{ fontSize: '2em' }}></i>
                             <div>{Math.round(hour.temp)}°F</div>
                         </li>
