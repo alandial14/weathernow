@@ -1,10 +1,22 @@
 .weather-layout {
     flex-direction: column;
-    /* display: flex; */
-    margin-top: 0px;
+    display: flex;
+    margin-top: 450px;
+    /* margin: auto; */
 
 }
 
 .forecast {
     margin-top: 20px;
+}
+
+.current-weather {
+    margin: auto;
+}
+
+.daily {
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: auto;
 }

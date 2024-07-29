@@ -1,9 +1,10 @@
 body {
-  font-family: "Courier New", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background-image: url('/public/clouds.jpg');
   background-size: cover;
   display: flex;
   margin: auto;
+  background-attachment: fixed;
 }
 
 body.clear-day {

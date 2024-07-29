@@ -1,6 +1,4 @@
 import React from 'react';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faSun, faCloud, faCloudRain, faSnowflake, faWind, faSmog, faCloudSun, faCloudMoon, faMoon } from '@fortawesome/free-solid-svg-icons';
 import 'weather-icons/css/weather-icons.css';
 import './Forecast.css'
 
@@ -34,7 +32,7 @@ function Forecast({ weatherData }) {
     return (
         <div className="forecast-container">
             <div className="forecast-header">
-                <h2>Hourly Forecast</h2>
+                <h2>Hourly</h2>
             </div>
             <div className="forecast-scroll">
                 <ul className="forecast-list">

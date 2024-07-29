@@ -1,0 +1,34 @@
+.daily-container {
+    background-color: rgba(207, 198, 198, 0.6);
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+}
+
+.daily-list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.daily-item {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.daily-header {
+    margin-right: 0px;
+}
+
+.info {
+    margin-right: 50px;
+}
+
+.date {
+    margin-right: 50px;
+}
